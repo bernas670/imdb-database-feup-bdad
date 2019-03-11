@@ -1,8 +1,8 @@
-# CGRA
+# BDAD
 
 ## TO DO:
-[ ] UML
-[ ] relatório
+- [ ] UML
+- [ ] relatório
 
 ## Ideias
 
