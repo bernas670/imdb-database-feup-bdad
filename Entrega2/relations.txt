@@ -1,3 +1,8 @@
 Content(ID,name, description,ageRating,score,duration,budget)
-Episode(Content->ID,number,seasonNumber)
-Movie(Content->ID,year,boxoffice)
+Episode(ID->Content,number,seasonNumber)
+Movie(ID->Content,year,boxoffice)
+Award(_ID_, category, awardName->AwardName)
+AwardName(_ID_, name)
+MovieAward(_year_, _awardID->Award_, movieID->Movie, personID->Person)
+TvAward(_year_, _awardID->Award_, tvShowID->TVShow, personID->Person)
+ 
