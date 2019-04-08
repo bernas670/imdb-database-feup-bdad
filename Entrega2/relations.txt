@@ -1,8 +1,28 @@
 Content(ID,name, description,ageRating,score,duration,budget)
 Episode(ID->Content,number,seasonNumber)
 Movie(ID->Content,year,boxoffice)
+
 Award(_ID_, category, awardName->AwardName)
 AwardName(_ID_, name)
 MovieAward(_year_, _awardID->Award_, movieID->Movie, personID->Person)
 TvAward(_year_, _awardID->Award_, tvShowID->TVShow, personID->Person)
  
+Episode(Content->ID,number,seasonNumber)
+Movie(Content->ID,year,boxoffice)
+
+Released(__ContentID__->Content, date, CountryID->Country)
+
+Person(__ID__, firstName, lastName, biography, photo, age, dateOfBirth, dateOfDeath, country->Country, gender->Gender)
+Gender(__ID__, name)
+Country(__ID__, name)
+
+Role(__ID__, description)
+RolePersonContent(__RoleID__->Role, __PersonID__->Person, __ContentID__->Content)
+
+Genre(ID,name,description)
+ContentGenre(contentID->Content,genreID->Content)
+User(ID,name,email)
+ContentReview(contentID->Content,userID->User,score,review)
+TVShowReview(tvshowID->TVShow,userID->User,score,review)
+Watchlist(contentID->Content,userID->User)
+
