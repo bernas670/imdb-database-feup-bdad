@@ -11,3 +11,10 @@ Country(__ID__, name)
 Role(__ID__, description)
 RolePersonContent(__RoleID__->Role, __PersonID__->Person, __ContentID__->Content)
 
+Genre(ID,name,description)
+ContentGenre(contentID->Content,genreID->Content)
+User(ID,name,email)
+ContentReview(contentID->Content,userID->User,score,review)
+TVShowReview(tvshowID->TVShow,userID->User,score,review)
+Watchlist(contentID->Content,userID->User)
+
