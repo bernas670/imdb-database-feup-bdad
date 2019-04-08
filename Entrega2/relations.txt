@@ -1,9 +1,12 @@
+--Relations--
+
+
 Content(id,name, description,ageRating,score,duration,budget)
 Episode(episodeID->Content,number,seasonNumber,tvshowID->TVShow)
 Movie(movieID->Content,year,boxoffice)
 TVShow(id,name,description,ageRating,score)
 
-Award(id,, category, awardName->AwardName)
+Award(id, category, awardName->AwardName)
 AwardName(id, name)
 MovieAward(year, awardID->Award, movieID->Movie, personID->Person)
 TvAward(year, awardID->Award, tvShowID->TVShow, personID->Person)
@@ -24,4 +27,51 @@ Released(contentID->Content, date, countryID->Country)
 Genre(id,name,description)
 ContentGenre(contentID->Content,genreID->Content)
 
+
+-- Functional Dependencies --
+
+Content:
+id->name,description,ageRating,score,duration,budget
+
+Movie:
+movieID->year,boxoffice
+
+Award:
+id->category,awardName
+
+AwardName:
+id->name
+
+MovieAward:
+
+
+TvAward:
+
+Person:
+id-> firstName, lastName, biography, photo, age, dateOfBirth, dateOfDeath, country, gender
+
+ContentReview:
+contentID,userID->score,review
+
+TVShowReview:
+tvshowID,userID->score,review
+
+
+Role:
+id->description
+
+RolePersonContent:
+
+
+Episode:
+episodeID->number,seasonNumber,tvShowID
+
+TVShow:
+name->description,ageRating,score
+
+Genre:
+name->description
+
+User:
+email->name
 
