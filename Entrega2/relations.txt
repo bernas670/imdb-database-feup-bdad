@@ -1,3 +1,13 @@
 Content(ID,name, description,ageRating,score,duration,budget)
 Episode(Content->ID,number,seasonNumber)
 Movie(Content->ID,year,boxoffice)
+
+
+
+
+Genre(ID,name,description)
+ContentGenre(contentID->Content,genreID->Content)
+User(ID,name,email)
+ContentReview(contentID->Content,userID->User,score,review)
+TVShowReview(tvshowID->TVShow,userID->User,score,review)
+Watchlist(contentID->Content,userID->User)
