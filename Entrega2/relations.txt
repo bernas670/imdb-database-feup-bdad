@@ -4,6 +4,15 @@
 #definir foreign keys da forma mais completa possivel
 
 
+/// perguntar sobre formas normais
+/// perguntar sobre as chaves nos awards
+/// perguntar sobre os ids tanto nas relacoes como no sql (ROWID)
+/// perguntar sobre elementos derivados
+/// perguntar funçõe de conversao
+/// perguntar sobre funções ON UPDATE e ON DELETE
+
+
+
 Content(id,name, description,ageRating,score,duration,budget)
 Episode(episodeID->Content,number,seasonNumber,tvshowID->TVShow)
 Movie(movieID->Content,year,boxoffice)
@@ -14,7 +23,7 @@ AwardName(id, name)
 MovieAward(year, awardID->Award, movieID->Movie, personID->Person)
 TvAward(year, awardID->Award, tvShowID->TVShow, personID->Person)
 
-Person(id, firstName, lastName, biography, photo, age, dateOfBirth, dateOfDeath, country->Country, gender->Gender)
+Person(id, firstName, lastName, biography, photo, dateOfBirth, dateOfDeath, country->Country, gender->Gender)
 Role(id, description)
 RolePersonContent(roleID->Role, personID->Person, contentID->Content)
 

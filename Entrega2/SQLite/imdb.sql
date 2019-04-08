@@ -59,7 +59,64 @@ CREATE TABLE AwardName(
 CREATE TABLE MovieAward(
 
     year                INT,
+    awardID             INT REFERENCES Award(id),
+    movieID             INT REFERENCES Movie(id),
+    personID            INT REFERENCES Person(id)
 
+);
 
+CREATE TABLE TVAward(
 
+    year                INT,
+    awardID             INT REFERENCES Award(id),
+    movieID             INT REFERENCES Movie(id),
+    personID            INT REFERENCES Person(id)
+
+);
+
+CREATE TABLE Person(
+
+    id                  INT PRIMARY KEY,
+    firstName           TEXT,
+    lastName            TEXT,
+    biography           TEXT,
+    photo               BLOB,
+    dateOfBirth         TEXT,
+    dateOfDeath         TEXT,
+    country             INT REFERENCES Country(id),
+    gender              INT REFERENCES Gender(id)
+
+);
+
+CREATE TABLE Role(
+
+    id                  INT PRIMARY KEY,
+    description         TEXT
+
+);
+
+CREATE TABLE RolePersonContent(
+
+    roleID              INT REFERENCES Role(id),
+    personID            INT REFERENCES Person(id),
+    contentID           INT REFERENCES Content(id),
+    PRIMARY KEY(roleID,personID, contenID)
+
+);
+
+CREATE TABLE User(
+
+    id                  INT PRIMARY KEY,
+    email               TEXT,
+    name                TEXT
+
+);
+
+CREATE TABLE ContentReview(
+
+    contentID           INT REFERENCES Content(id),
+    userID              INT REFERENCES User(id),
+    score               INT,
+    review              TEXT,
+    PRIMARY KEY(contentID,userID)
 );
