@@ -28,7 +28,7 @@ Gender(id, name)
 Country(id, name)
 Released(contentID->Content, date, countryID->Country)
 Genre(id,name,description)
-ContentGenre(contentID->Content,genreID->Content)
+ContentGenre(contentID->Content,genreID->Genre)
 
 
 -- Functional Dependencies --
