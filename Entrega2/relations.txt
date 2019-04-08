@@ -1,0 +1,3 @@
+Content(ID,name, description,ageRating,score,duration,budget)
+Episode(Content->ID,number,seasonNumber)
+Movie(Content->ID,year,boxoffice)
