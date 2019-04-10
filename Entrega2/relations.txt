@@ -4,12 +4,12 @@
 #definir foreign keys da forma mais completa possivel
 
 
-/// perguntar sobre formas normais
-/// perguntar sobre as chaves nos awards
-/// perguntar sobre os ids tanto nas relacoes como no sql (ROWID)
-/// perguntar sobre elementos derivados
-/// perguntar funçõe de conversao
-/// perguntar sobre funções ON UPDATE e ON DELETE
+/// perguntar sobre formas normais -- BCNF (alterar fds para incluir ids)
+/// perguntar sobre as chaves nos awards -- todos os atributos sao chaves (menos year)
+/// perguntar sobre os ids tanto nas relacoes como no sql (ROWID) -- manter os ids, ao inserir nao inserir id
+/// perguntar sobre elementos derivados -- é com triggers, nao interessa para agora, por NULL 
+/// perguntar funçõe de conversao (DATAS) -- ver formatos e escolher o mais apropriado
+/// perguntar sobre funções ON UPDATE e ON DELETE -- decidir quais sao as melhorers a usar nao existe regra fixa
 
 
 

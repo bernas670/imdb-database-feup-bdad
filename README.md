@@ -1,26 +1,21 @@
 # BDAD
 
 ## TO DO:
-- [ ] UML
-- [ ] relatório
-
-## Ideias
-
-#### Temos 3 problemas:
-* reviews
-  * da maneira que está, não dá para fazer reviews aos episódios
-* release e country
-  * o release tem que estar duplicado, para o movie e para o episode
-* o mesmo acontece para o role
-* há o problema de não guardar os nomes das personagens
-
-
-#### Possíveis soluções:
-* em vez de generalizar TV Show e Movie em content, generalizar Episode e Movie, mas isto mantém o problema das reviews, mas inverso. facilitaria a parte do role e do release. o genre teria que ter duas ligacoes. teríamos duas watchlists, uma para séries e uma para review.
-* se fizermos uma classe associação cast, poderíamos guardar os papeis dos atores nos filmes, mas teríamos que arranjar uma maneira melhor de guardar os outros papéis dos filmes
+- [ ] UML - Finalizar
+- [ ] Relatório - Adicionar novas partes
+    - [ ] Novo UML
+    - [ ] Discussão do novo UML
+    - [ ] Alterações ao modelo antigo
+    - [ ] Relações, CHAVES, modelo usado e dependências funcionais
+    - [ ] Falar sobre o SQL
+- [ ] SQL
+    - [ ] Criar as relações
+    - [ ] Adicionar restrições
+    - [ ] Expecificar as foreign keys da melhor forma possivel
+    - [ ] Adicionar ON UPDATE e ON DELETE clauses
+    - [ ] Criar o povoamento das tabelas
 
 
-# jogar um typeracer, assim de surra
 
 
 

@@ -61,7 +61,8 @@ CREATE TABLE MovieAward(
     year                INT,
     awardID             INT REFERENCES Award(id),
     movieID             INT REFERENCES Movie(id),
-    personID            INT REFERENCES Person(id)
+    personID            INT REFERENCES Person(id),
+    PRIMARY KEY(awardID,movieID,personID)
 
 );
 
@@ -69,8 +70,9 @@ CREATE TABLE TVAward(
 
     year                INT,
     awardID             INT REFERENCES Award(id),
-    movieID             INT REFERENCES Movie(id),
-    personID            INT REFERENCES Person(id)
+    tvshowID            INT REFERENCES TVShow(id),
+    personID            INT REFERENCES Person(id),
+    PRIMARY KEY(awardID,tvshowID,personID)
 
 );
 
