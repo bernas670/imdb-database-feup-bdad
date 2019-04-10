@@ -11,7 +11,7 @@ CREATE TABLE Content(
 
 );
 
-CREATE TABLE MOVIE(
+CREATE TABLE Movie(
 
     movieID             INT PRIMARY KEY REFERENCES Content(id),
     year                INT,
@@ -66,6 +66,63 @@ CREATE TABLE MovieAward(
 
 );
 
+CREATE TABLE TvShowReview(
+
+	tvshowID			INT REFERENCES TVShow(id),
+	userID				INT REFERENCES User(id),
+	score				INT,
+	review				TEXT,
+
+	PRIMARY KEY(tvshowID, userID)
+
+);
+
+CREATE TABLE Watchlist(
+
+	contentID			INT REFERENCES Content(id),
+	userID				INT REFERENCES User(id),
+
+	PRIMARY KEY(contentID, userID)
+
+);
+
+CREATE TABLE Gender(
+
+	id 					INT PRIMARY KEY,
+	name				TEXT
+
+);
+
+CREATE TABLE Country(
+
+	id					INT PRIMARY KEY,
+	name				TEXT
+
+);
+
+CREATE TABLE Released(
+
+	contentID			INT PRIMARY KEY REFERENCES Content(id),
+	date				TEXT,
+	countryID			INT REFERENCES Country(id)
+
+);
+
+CREATE TABLE Genre(
+
+	id					INT PRIMARY KEY,
+	name				TEXT,
+	description			TEXT
+
+);
+
+CREATE TABLE ContentGenre(
+
+	contentID			INT REFERENCES Content(id),
+	genreID				INT REFERENCES Genre(id)
+
+);
+
 CREATE TABLE TVAward(
 
     year                INT,
@@ -102,6 +159,7 @@ CREATE TABLE RolePersonContent(
     roleID              INT REFERENCES Role(id),
     personID            INT REFERENCES Person(id),
     contentID           INT REFERENCES Content(id),
+
     PRIMARY KEY(roleID,personID, contenID)
 
 );
@@ -120,5 +178,7 @@ CREATE TABLE ContentReview(
     userID              INT REFERENCES User(id),
     score               INT,
     review              TEXT,
+
     PRIMARY KEY(contentID,userID)
+
 );
