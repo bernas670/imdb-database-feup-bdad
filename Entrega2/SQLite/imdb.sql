@@ -103,9 +103,10 @@ CREATE TABLE Country(
 
 CREATE TABLE Released(
 
-	contentID			INTEGER PRIMARY KEY REFERENCES Content(id),
+	contentID			INTEGER REFERENCES Content(id),
 	date				DATE NOT NULL,
-	countryID			INTEGER REFERENCES Country(id)
+	countryID			INTEGER REFERENCES Country(id),
+    PRIMARY KEY(contentID, countryID)
 
 );
 
