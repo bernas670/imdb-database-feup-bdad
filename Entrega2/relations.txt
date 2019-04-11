@@ -85,6 +85,6 @@ Genre:
 name->description
 
 User:
-email->name
+email->name,userID
 userID->email,name
 

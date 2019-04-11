@@ -15,7 +15,11 @@
     - [ ] Adicionar ON UPDATE e ON DELETE clauses
     - [ ] Criar o povoamento das tabelas
 
-
+NOTAS:
+- no uml atualizar a restrição de age rating
+- ver situação do year dos movies
+- restrição de onGoing (NULL)
+- dependencias funcionais (ver os uniques)
 
 
 
