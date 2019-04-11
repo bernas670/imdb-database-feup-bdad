@@ -1,20 +1,20 @@
 
 CREATE TABLE Content(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     name                TEXT NOT NULL,
     description         TEXT,
     ageRating           TEXT,
-    score               INT,
-    duration            INT CHECK(duration > 0),
+    score               INTEGER,
+    duration            INTEGER CHECK(duration > 0),
     budget              REAL CHECK(budget > 0) 
 
 );
 
 CREATE TABLE Movie(
 
-    movieID             INT PRIMARY KEY REFERENCES Content(id),
-    year                INT CHECK(year > 1850) NOT NULL,
+    id                  INTEGER PRIMARY KEY REFERENCES Content(id),
+    year                INTEGER CHECK(year > 1850) NOT NULL,
     boxoffice           REAL CHECK(boxoffice >= 0)          
 
 );
@@ -22,36 +22,36 @@ CREATE TABLE Movie(
 
 CREATE TABLE TVShow(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     name                TEXT UNIQUE NOT NULL,
     description         TEXT,
     ageRating           TEXT,
-    score               INT,
-    onGoing             INT
+    score               INTEGER,
+    onGoing             INTEGER
 
 );
 
 CREATE TABLE Episode(
 
-    episodeID           INT PRIMARY KEY REFERENCES Content(id),
-    number              INT CHECK(number >= 0) NOT NULL,
-    seasonNumber        INT CHECK(seasonNumber > 0) NOT NULL,
-    tvshowID            INT REFERENCES TVShow(id)
+    id                  INTEGER PRIMARY KEY REFERENCES Content(id),
+    number              INTEGER CHECK(number >= 0) NOT NULL,
+    seasonNumber        INTEGER CHECK(seasonNumber > 0) NOT NULL,
+    tvshowID            INTEGER REFERENCES TVShow(id)
 
 );
 
 
 CREATE TABLE Award(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     category            TEXT NOT NULL,
-    awardNameID         INT REFERENCES AwardName(id)
+    awardNameID         INTEGER REFERENCES AwardName(id)
         
 );
 
 CREATE TABLE AwardName(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     name                TEXT UNIQUE NOT NULL
 
 );
@@ -59,19 +59,19 @@ CREATE TABLE AwardName(
 
 CREATE TABLE MovieAward(
 
-    year                INT NOT NULL,
-    awardID             INT REFERENCES Award(id),
-    movieID             INT REFERENCES Movie(id),
-    personID            INT REFERENCES Person(id),
+    year                INTEGER NOT NULL,
+    awardID             INTEGER REFERENCES Award(id),
+    movieID             INTEGER REFERENCES Movie(id),
+    personID            INTEGER REFERENCES Person(id),
     PRIMARY KEY(awardID,movieID,personID)
 
 );
 
 CREATE TABLE TvShowReview(
 
-	tvshowID			INT REFERENCES TVShow(id),
-	userID				INT REFERENCES User(id),
-	score				INT CHECK(score >= 0 AND score <= 10),
+	tvshowID			INTEGER REFERENCES TVShow(id),
+	userID				INTEGER REFERENCES User(id),
+	score				INTEGER CHECK(score >= 0 AND score <= 10),
 	review				TEXT,
 
 	PRIMARY KEY(tvshowID, userID)
@@ -80,8 +80,8 @@ CREATE TABLE TvShowReview(
 
 CREATE TABLE Watchlist(
 
-	contentID			INT REFERENCES Content(id),
-	userID				INT REFERENCES User(id),
+	contentID			INTEGER REFERENCES Content(id),
+	userID				INTEGER REFERENCES User(id),
 
 	PRIMARY KEY(contentID, userID)
 
@@ -89,29 +89,29 @@ CREATE TABLE Watchlist(
 
 CREATE TABLE Gender(
 
-	id 					INT PRIMARY KEY,
+	id 					INTEGER PRIMARY KEY,
 	name				TEXT UNIQUE NOT NULL
 
 );
 
 CREATE TABLE Country(
 
-	id					INT PRIMARY KEY,
+	id					INTEGER PRIMARY KEY,
 	name				TEXT UNIQUE NOT NULL
 
 );
 
 CREATE TABLE Released(
 
-	contentID			INT PRIMARY KEY REFERENCES Content(id),
+	contentID			INTEGER PRIMARY KEY REFERENCES Content(id),
 	date				DATE NOT NULL,
-	countryID			INT REFERENCES Country(id)
+	countryID			INTEGER REFERENCES Country(id)
 
 );
 
 CREATE TABLE Genre(
 
-	id					INT PRIMARY KEY,
+	id					INTEGER PRIMARY KEY,
 	name				TEXT UNIQUE NOT NULL,
 	description			TEXT
 
@@ -119,48 +119,49 @@ CREATE TABLE Genre(
 
 CREATE TABLE ContentGenre(
 
-	contentID			INT REFERENCES Content(id),
-	genreID				INT REFERENCES Genre(id)
+	contentID			INTEGER REFERENCES Content(id),
+	genreID				INTEGER REFERENCES Genre(id),
+    PRIMARY KEY(contentID, genreID)
 
 );
 
 CREATE TABLE TVAward(
 
-    year                INT NOT NULL,
-    awardID             INT REFERENCES Award(id),
-    tvshowID            INT REFERENCES TVShow(id),
-    personID            INT REFERENCES Person(id),
+    year                INTEGER NOT NULL,
+    awardID             INTEGER REFERENCES Award(id),
+    tvshowID            INTEGER REFERENCES TVShow(id),
+    personID            INTEGER REFERENCES Person(id),
     PRIMARY KEY(awardID,tvshowID,personID)
 
 );
 
 CREATE TABLE Person(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     firstName           TEXT NOT NULL,
     lastName            TEXT NOT NULL,
     biography           TEXT,
     photo               BLOB,
     dateOfBirth         DATE NOT NULL,
     dateOfDeath         DATE,
-    country             INT REFERENCES Country(id),
-    gender              INT REFERENCES Gender(id)
+    country             INTEGER REFERENCES Country(id),
+    gender              INTEGER REFERENCES Gender(id)
     CHECK((dateOfBirth < dateOfDeath) or (dateOfDeath is NULL ))
 
 );
 
 CREATE TABLE Role(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     description         TEXT NOT NULL
 
 );
 
 CREATE TABLE RolePersonContent(
 
-    roleID              INT REFERENCES Role(id),
-    personID            INT REFERENCES Person(id),
-    contentID           INT REFERENCES Content(id),
+    roleID              INTEGER REFERENCES Role(id),
+    personID            INTEGER REFERENCES Person(id),
+    contentID           INTEGER REFERENCES Content(id),
 
     PRIMARY KEY(roleID,personID, contentID)
 
@@ -168,7 +169,7 @@ CREATE TABLE RolePersonContent(
 
 CREATE TABLE User(
 
-    id                  INT PRIMARY KEY,
+    id                  INTEGER PRIMARY KEY,
     email               TEXT UNIQUE NOT NULL ,
     name                TEXT NOT NULL
 
@@ -176,9 +177,9 @@ CREATE TABLE User(
 
 CREATE TABLE ContentReview(
 
-    contentID           INT REFERENCES Content(id),
-    userID              INT REFERENCES User(id),
-    score               INT CHECK(score >= 0 AND score <= 10),
+    contentID           INTEGER REFERENCES Content(id),
+    userID              INTEGER REFERENCES User(id),
+    score               INTEGER CHECK(score >= 0 AND score <= 10),
     review              TEXT,
 
     PRIMARY KEY(contentID,userID)
