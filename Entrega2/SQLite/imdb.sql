@@ -13,7 +13,7 @@ CREATE TABLE Content(
 
 CREATE TABLE Movie(
 
-    id                  INTEGER PRIMARY KEY REFERENCES Content(id),
+    id                  INTEGER PRIMARY KEY REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT, 
     year                INTEGER CHECK(year > 1850) NOT NULL,
     boxoffice           REAL CHECK(boxoffice >= 0)          
 
@@ -33,7 +33,7 @@ CREATE TABLE TVShow(
 
 CREATE TABLE Episode(
 
-    id                  INTEGER PRIMARY KEY REFERENCES Content(id),
+    id                  INTEGER PRIMARY KEY REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     number              INTEGER CHECK(number >= 0) NOT NULL,
     seasonNumber        INTEGER CHECK(seasonNumber > 0) NOT NULL,
     tvshowID            INTEGER REFERENCES TVShow(id)
@@ -45,7 +45,7 @@ CREATE TABLE Award(
 
     id                  INTEGER PRIMARY KEY,
     category            TEXT NOT NULL,
-    awardNameID         INTEGER REFERENCES AwardName(id)
+    awardNameID         INTEGER REFERENCES AwardName(id) ON UPDATE CASCADE ON DELETE RESTRICT
         
 );
 
@@ -60,17 +60,17 @@ CREATE TABLE AwardName(
 CREATE TABLE MovieAward(
 
     year                INTEGER NOT NULL,
-    awardID             INTEGER REFERENCES Award(id),
-    movieID             INTEGER REFERENCES Movie(id),
-    personID            INTEGER REFERENCES Person(id),
+    awardID             INTEGER REFERENCES Award(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    movieID             INTEGER REFERENCES Movie(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     PRIMARY KEY(awardID,movieID,personID)
 
 );
 
 CREATE TABLE TvShowReview(
 
-	tvshowID			INTEGER REFERENCES TVShow(id),
-	userID				INTEGER REFERENCES User(id),
+	tvshowID			INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+	userID				INTEGER REFERENCES User(id) ON UPDATE CASCADE ON DELETE RESTRICT,
 	score				INTEGER CHECK(score >= 0 AND score <= 10),
 	review				TEXT,
 
@@ -80,8 +80,8 @@ CREATE TABLE TvShowReview(
 
 CREATE TABLE Watchlist(
 
-	contentID			INTEGER REFERENCES Content(id),
-	userID				INTEGER REFERENCES User(id),
+	contentID			INTEGER REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+	userID				INTEGER REFERENCES User(id) ON UPDATE CASCADE ON DELETE RESTRICT,
 
 	PRIMARY KEY(contentID, userID)
 
@@ -103,9 +103,9 @@ CREATE TABLE Country(
 
 CREATE TABLE Released(
 
-	contentID			INTEGER REFERENCES Content(id),
+	contentID			INTEGER REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
 	date				DATE NOT NULL,
-	countryID			INTEGER REFERENCES Country(id),
+	countryID			INTEGER REFERENCES Country(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     PRIMARY KEY(contentID, countryID)
 
 );
@@ -120,8 +120,8 @@ CREATE TABLE Genre(
 
 CREATE TABLE ContentGenre(
 
-	contentID			INTEGER REFERENCES Content(id),
-	genreID				INTEGER REFERENCES Genre(id),
+	contentID			INTEGER REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+	genreID				INTEGER REFERENCES Genre(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     PRIMARY KEY(contentID, genreID)
 
 );
@@ -129,9 +129,9 @@ CREATE TABLE ContentGenre(
 CREATE TABLE TVAward(
 
     year                INTEGER NOT NULL,
-    awardID             INTEGER REFERENCES Award(id),
-    tvshowID            INTEGER REFERENCES TVShow(id),
-    personID            INTEGER REFERENCES Person(id),
+    awardID             INTEGER REFERENCES Award(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    tvshowID            INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     PRIMARY KEY(awardID,tvshowID,personID)
 
 );
@@ -145,8 +145,8 @@ CREATE TABLE Person(
     photo               BLOB,
     dateOfBirth         DATE NOT NULL,
     dateOfDeath         DATE,
-    country             INTEGER REFERENCES Country(id),
-    gender              INTEGER REFERENCES Gender(id)
+    country             INTEGER REFERENCES Country(id) ON UPDATE CASCADE ON DELETE SET NULL,
+    gender              INTEGER REFERENCES Gender(id) ON UPDATE CASCADE ON DELETE SET NULL,
     CHECK((dateOfBirth < dateOfDeath) or (dateOfDeath is NULL ))
 
 );
@@ -160,9 +160,9 @@ CREATE TABLE Role(
 
 CREATE TABLE RolePersonContent(
 
-    roleID              INTEGER REFERENCES Role(id),
-    personID            INTEGER REFERENCES Person(id),
-    contentID           INTEGER REFERENCES Content(id),
+    roleID              INTEGER REFERENCES Role(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    contentID           INTEGER REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
 
     PRIMARY KEY(roleID,personID, contentID)
 
@@ -178,8 +178,8 @@ CREATE TABLE User(
 
 CREATE TABLE ContentReview(
 
-    contentID           INTEGER REFERENCES Content(id),
-    userID              INTEGER REFERENCES User(id),
+    contentID           INTEGER REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    userID              INTEGER REFERENCES User(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     score               INTEGER CHECK(score >= 0 AND score <= 10),
     review              TEXT,
 
