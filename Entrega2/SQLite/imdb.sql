@@ -57,7 +57,7 @@ CREATE TABLE Episode(
     id                  INTEGER PRIMARY KEY REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     number              INTEGER CHECK(number >= 0) NOT NULL,
     seasonNumber        INTEGER CHECK(seasonNumber > 0) NOT NULL,
-    tvshowID            INTEGER REFERENCES TVShow(id)
+    tvshowID            INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT
 
 );
 
