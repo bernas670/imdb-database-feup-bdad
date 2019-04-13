@@ -16,9 +16,9 @@
     - [ ] Criar o povoamento das tabelas
 
 NOTAS:
-- no uml atualizar a restrição de age rating
+- no uml atualizar a restrição de age rating DONE
 - ver situação do year dos movies
-- restrição de onGoing (NULL)
+- restrição de onGoing (NULL) DONE
 - dependencias funcionais (ver os uniques)
 
 
