@@ -87,6 +87,19 @@ INSERT INTO Movie VALUES(4,1998,46199999.999999999998);
 INSERT INTO Movie VALUES(5,1996,NULL);
 INSERT INTO Movie VALUES(6,1980,44400000.0);
 
+INSERT INTO TVShow VALUES(1,'Breaking Bad','A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family''s future.','M/16',NULL,'false');
+
+INSERT INTO Episode VALUES(7,1,1,1);
+INSERT INTO Episode VALUES(8,2,1,1);
+INSERT INTO Episode VALUES(9,3,1,1);
+INSERT INTO Episode VALUES(10,1,2,1);
+INSERT INTO Episode VALUES(11,2,2,1);
+INSERT INTO Episode VALUES(12,1,3,1);
+INSERT INTO Episode VALUES(13,2,3,1);
+INSERT INTO Episode VALUES(14,1,4,1);
+INSERT INTO Episode VALUES(15,1,5,1);
+INSERT INTO Episode VALUES(16,2,5,1);
+
 INSERT INTO ContentGenre VALUES(1,1);
 INSERT INTO ContentGenre VALUES(1,2);
 INSERT INTO ContentGenre VALUES(2,1);
