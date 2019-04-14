@@ -18,6 +18,7 @@ DROP TABLE IF EXISTS ContentGenre;
 DROP TABLE IF EXISTS Gender;
 DROP TABLE IF EXISTS Released;
 DROP TABLE IF EXISTS Country;
+DROP TABLE IF EXISTS Creator;
 
 
 CREATE TABLE Content(
@@ -57,7 +58,7 @@ CREATE TABLE Episode(
     id                  INTEGER PRIMARY KEY REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     number              INTEGER CHECK(number >= 0) NOT NULL,
     seasonNumber        INTEGER CHECK(seasonNumber > 0) NOT NULL,
-    tvshowID            INTEGER REFERENCES TVShow(id)
+    tvshowID            INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT
 
 );
 
@@ -170,6 +171,14 @@ CREATE TABLE Person(
     gender              INTEGER REFERENCES Gender(id) ON UPDATE CASCADE ON DELETE SET NULL,
     CHECK((dateOfBirth < dateOfDeath) or (dateOfDeath is NULL ))
 
+);
+
+CREATE TABLE Creator(
+
+    personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+    tvshowID            INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT,
+
+    PRIMARY KEY(personID,tvshowID)
 );
 
 CREATE TABLE Role(
