@@ -368,7 +368,7 @@ INSERT INTO AwardName VALUES(6,'Cannes Film Festival');
 
 INSERT INTO Award VALUES(1,'Best Television Series - Drama',1);
 INSERT INTO Award VALUES(2,'Best Actor in a Television Series - Drama ',1);
-INSERT INTO Award VALUES(3,'    Outstanding Performance by a Male Actor in a Drama Series ',3);
+INSERT INTO Award VALUES(3,'Outstanding Performance by a Male Actor in a Drama Series',3);
 INSERT INTO Award VALUES(4,'Outstanding Performance by an Ensemble in a Drama Series',3);
 INSERT INTO Award VALUES(5,'Outstanding Lead Actor in a Drama Series',2);
 INSERT INTO Award VALUES(6,'Outstanding Drama Series',2);
@@ -380,6 +380,7 @@ INSERT INTO Award VALUES(11,'Best Actor in a Supporting Role',1);
 INSERT INTO Award VALUES(12,'Best Screenplay - Original',5);
 INSERT INTO Award VALUES(13,'Best Screenplay - Adapted',5);
 INSERT INTO Award VALUES(14,'Palme d''Or',6);
+INSERT INTO Award VALUES(15, 'Outstanding Animated Program',2);
 
 INSERT INTO TVAward VALUES(2014,1,1,NULL);
 INSERT INTO TVAward VALUES(2014,2,1,11);
@@ -389,6 +390,7 @@ INSERT INTO TVAward VALUES(2014,5,1,11);
 INSERT INTO TVAward VALUES(2014,6,1,NULL);
 INSERT INTO TVAward VALUES(2014,7,1,13);
 INSERT INTO TVAward VALUES(2014,8,1,12);
+INSERT INTO TVAward VALUES(2018,15,3,NULL);
 
 INSERT INTO MovieAward VALUES(1995,9,2,9);
 INSERT INTO MovieAward VALUES(1995,10,2,9);
