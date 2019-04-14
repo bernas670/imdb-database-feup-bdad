@@ -70,6 +70,7 @@ INSERT INTO Person VALUES(27,'Tony','Way',NULL,NULL,'1978-11-07',NULL,5,2);
 INSERT INTO Person VALUES(28,'Dan','Harmon','Dan Harmon was born on January 3, 1973 in Milwaukee, Wisconsin, USA. He is best known as the creator, writing, and producer for Community (2007) and Rick and Morty (2013). He also is known for writing and producing earlier works such as Computerman (2003), and Laser Fart (2004)',NULL,'1973-01-03',NULL,1,2);
 INSERT INTO Person VALUES(29,'Justin','Roiland','Justin Roiland was born on February 21, 1980 in Stockton, California, USA as Mark Justin Roiland. He is an actor and producer, known for Rick e Morty (2013), The Most Extraordinary Space Investigations (2005) and 2 Girls, 1 Cup: The Show (2008).','path/to/photo','1980-02-21',NULL,1,2);
 INSERT INTO Person VALUES(30,'Wesley','Archer','Wesley Archer was born on November 26, 1961 in Houston, Texas, USA as Wesley Meyer Archer. He is known for his work on Rick e Morty (2013), King of the Hill (1997) and Os Simpsons (1989).',NULL,'1961-11-26',NULL,1,2);
+INSERT INTO Person VALUES(31,'John','Hodge','John Hodge was born in 1964 in Glasgow, Scotland. He is a writer and actor, known for Trainspotting (1996), T2 Trainspotting (2017) and Pequenos Crimes Entre Amigos (1994).',NULL,'1964-11-23',NULL,6,2);
 
 INSERT INTO Content VALUES(1,'Taxi Driver','A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute.','M/18',NULL,114);
 INSERT INTO Content VALUES(2,'Pulp Fiction','The lives of two mob hitmen, a boxer, a gangster''s wife, and a pair of diner bandits intertwine in four tales of violence and redemption.','M/16',NULL,154);
@@ -357,3 +358,41 @@ INSERT INTO Watchlist VALUES(7,3);
 INSERT INTO Watchlist VALUES(1,3);
 INSERT INTO Watchlist VALUES(3,3);
 INSERT INTO Watchlist VALUES(10,3);
+
+INSERT INTO AwardName VALUES(1,'Golden Globe');
+INSERT INTO AwardName VALUES(2,'Primetime Emmy');
+INSERT INTO AwardName VALUES(3,'Screen Actors Guild');
+INSERT INTO AwardName VALUES(4,'Oscar');
+INSERT INTO AwardName VALUES(5,'British Academy Film Awards');
+INSERT INTO AwardName VALUES(6,'Cannes Film Festival');
+
+INSERT INTO Award VALUES(1,'Best Television Series - Drama',1);
+INSERT INTO Award VALUES(2,'Best Actor in a Television Series - Drama ',1);
+INSERT INTO Award VALUES(3,'    Outstanding Performance by a Male Actor in a Drama Series ',3);
+INSERT INTO Award VALUES(4,'Outstanding Performance by an Ensemble in a Drama Series',3);
+INSERT INTO Award VALUES(5,'Outstanding Lead Actor in a Drama Series',2);
+INSERT INTO Award VALUES(6,'Outstanding Drama Series',2);
+INSERT INTO Award VALUES(7,'Outstanding Supporting Actress in a Drama Series',2);
+INSERT INTO Award VALUES(8,'Outstanding Supporting Actor in a Drama Series',2);
+INSERT INTO Award VALUES(9,'Best Writing, Screenplay Written Directly for the Screen',4);
+INSERT INTO Award VALUES(10,'Best Screenplay - Motion Picture',1);
+INSERT INTO Award VALUES(11,'Best Actor in a Supporting Role',1);
+INSERT INTO Award VALUES(12,'Best Screenplay - Original',5);
+INSERT INTO Award VALUES(13,'Best Screenplay - Adapted',5);
+INSERT INTO Award VALUES(14,'Palme d''Or',6);
+
+INSERT INTO TVAward VALUES(2014,1,1,NULL);
+INSERT INTO TVAward VALUES(2014,2,1,11);
+INSERT INTO TVAward VALUES(2014,3,1,11);
+INSERT INTO TVAward VALUES(2014,4,1,NULL);
+INSERT INTO TVAward VALUES(2014,5,1,11);
+INSERT INTO TVAward VALUES(2014,6,1,NULL);
+INSERT INTO TVAward VALUES(2014,7,1,13);
+INSERT INTO TVAward VALUES(2014,8,1,12);
+
+INSERT INTO MovieAward VALUES(1995,9,2,9);
+INSERT INTO MovieAward VALUES(1995,10,2,9);
+INSERT INTO MovieAward VALUES(1995,11,2,6);
+INSERT INTO MovieAward VALUES(1995,12,2,9);
+INSERT INTO MovieAward VALUES(1996,13,5,31);
+INSERT INTO MovieAward VALUES(1976,14,1,1);
