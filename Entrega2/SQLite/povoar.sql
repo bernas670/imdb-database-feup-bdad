@@ -1,6 +1,6 @@
 PRAGMA foreign_keys = ON;
 
-INSERT INTO User VALUES(1,'up201706736@fe.up.pt','lp');
+INSERT INTO User VALUES(1,'up201706736@fe.up.pt','lpc');
 INSERT INTO User VALUES(2,'up201705373@fe.up.pt','dhero');
 INSERT INTO User VALUES(3,'up201706534@fe.up.pt','b670');
 
@@ -218,3 +218,28 @@ INSERT INTO RolePersonContent VALUES(1,24,16);
 INSERT INTO RolePersonContent VALUES(2,25,16);
 INSERT INTO RolePersonContent VALUES(3,10,16);
 
+INSERT INTO ContentReview(2,3, 6, 'The film was very cool, but the narrative was not linear and hard to follow.');
+INSERT INTO ContentReview(2,1,10, 'A masterpiece! A brilliant movie by the wonderful Quentin Tarantino. Would recommend and would watch again.');
+INSERT INTO ContentReview(1,2,2, 'This movie is very boring. The acting seems forced and the movie follows a very cliche path.');
+INSERT INTO ContentReview(7,3,8, 'The start to the legendary drama series. It starts slow but by the end you will be surely be begging for more.');
+INSERT INTO ContentReview(14,1,5, 'This episode feels more like a "filler". Still a brilliant performance by Bryan Cranston');
+INSERT INTO TVShowReview(1,3,5, 'One of the best tv series of all time. If you like drama this is the series to watch.');
+INSERT INTO TVShowReview(1,2,2, 'I caught my son watching this. Drug related content should not be shown on TV');
+
+INSERT INTO Watchlist(3,1);
+INSERT INTO Watchlist(5,1);
+INSERT INTO Watchlist(6,1);
+INSERT INTO Watchlist(7,1);
+INSERT INTO Watchlist(15,1);
+
+INSERT INTO Watchlist(1,2);
+INSERT INTO Watchlist(7,2);
+INSERT INTO Watchlist(6,2);
+INSERT INTO Watchlist(8,2);
+INSERT INTO Watchlist(12,2);
+
+INSERT INTO Watchlist(4,3);
+INSERT INTO Watchlist(7,3);
+INSERT INTO Watchlist(1,3);
+INSERT INTO Watchlist(3,3);
+INSERT INTO Watchlist(10,3);
