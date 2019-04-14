@@ -218,13 +218,36 @@ INSERT INTO RolePersonContent VALUES(1,24,16);
 INSERT INTO RolePersonContent VALUES(2,25,16);
 INSERT INTO RolePersonContent VALUES(3,10,16);
 
-INSERT INTO ContentReview(2,3, 6, 'The film was very cool, but the narrative was not linear and hard to follow.');
-INSERT INTO ContentReview(2,1,10, 'A masterpiece! A brilliant movie by the wonderful Quentin Tarantino. Would recommend and would watch again.');
+INSERT INTO ContentReview(1,3,10, 'A classic everyone should watch.');
 INSERT INTO ContentReview(1,2,2, 'This movie is very boring. The acting seems forced and the movie follows a very cliche path.');
+INSERT INTO ContentReview(1,1,4, 'Come on! A masterpiece? I think not.');
+
+INSERT INTO ContentReview(2,3,6, 'The film was very cool, but the narrative was not linear and hard to follow.');
+INSERT INTO ContentReview(2,2,5, 'A bit too bloody for my taste. Samuel L. Jackson was wonderful as always.');
+INSERT INTO ContentReview(2,1,10, 'A masterpiece! A brilliant movie by the wonderful Quentin Tarantino. Would recommend and would watch again.');
+
+INSERT INTO ContentReview(3,3,8, 'A very interesting movie that makes you think. Every actors performance was on point!');
+INSERT INTO ContentReview(3,2,7, 'The trailer was misleading. Still, a nice movie.');
+INSERT INTO ContentReview(3,1,2, 'I could not understand the movie when I saw it in the movie theater. Watched it again last night, still didnt understand. Would not recomend.');
+
+INSERT INTO ContentReview(4,3,6, 'I liked the movie. Still, I think some of the moments seemed forced (maybe due to the actors inexperience).');
+INSERT INTO ContentReview(4,2,10, 'Do yourself a favour and watch this movie if you havent already. Hell, even if youve already seen in, go watch it again!');
+INSERT INTO ContentReview(4,1,9, 'A breath of fresh air! I could not think of a better blend between crime and comedy.');
+
+INSERT INTO ContentReview(5,3,7, 'This movie makes you think in a way you havent thought before.');
+INSERT INTO ContentReview(5,2,3, 'Honestly, i dont see the appeal of this movie.');
+INSERT INTO ContentReview(5,1,8, 'If you dont understand the hidden meaning of this movie, go watch it again.');
+
+INSERT INTO ContentReview(6,3,9, 'Stephen King is and always will be the king of terror.');
+INSERT INTO ContentReview(6,2,5, 'I have mixed feelings about this movie. I mean, its, but it doesnt do much justice to the stephen king novel.');
+INSERT INTO ContentReview(6,1,8, 'This movie aims to scare you in a more intellegent way than the average jump-scare-film and it succeeds.');
+
 INSERT INTO ContentReview(7,3,8, 'The start to the legendary drama series. It starts slow but by the end you will be surely be begging for more.');
 INSERT INTO ContentReview(14,1,5, 'This episode feels more like a "filler". Still a brilliant performance by Bryan Cranston');
-INSERT INTO TVShowReview(1,3,5, 'One of the best tv series of all time. If you like drama this is the series to watch.');
+
+INSERT INTO TVShowReview(1,3,9, 'One of the best tv series of all time. If you like drama this is the series to watch.');
 INSERT INTO TVShowReview(1,2,2, 'I caught my son watching this. Drug related content should not be shown on TV');
+INSERT INTO TVShowReview(1,1,7, 'It is a cool show but towards the end it feels kinda repetitive.');
 
 INSERT INTO Watchlist(3,1);
 INSERT INTO Watchlist(5,1);
