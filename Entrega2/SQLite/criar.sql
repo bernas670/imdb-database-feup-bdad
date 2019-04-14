@@ -77,14 +77,18 @@ CREATE TABLE AwardName(
 
 );
 
+CREATE TABLE Year(
+
+    year                INTEGER PRIMARY KEY
+);
 
 CREATE TABLE MovieAward(
 
-    year                INTEGER NOT NULL,
+    year                INTEGER REFERENCES Year(year) ON UPDATE CASCADE ON DELETE RESTRICT,
     awardID             INTEGER REFERENCES Award(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     movieID             INTEGER REFERENCES Movie(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
-    PRIMARY KEY(awardID,movieID,personID)
+    PRIMARY KEY(year,awardID,movieID,personID)
 
 );
 
@@ -149,11 +153,11 @@ CREATE TABLE ContentGenre(
 
 CREATE TABLE TVAward(
 
-    year                INTEGER NOT NULL,
+    year                INTEGER REFERENCES Year(year) ON UPDATE CASCADE ON DELETE RESTRICT,
     awardID             INTEGER REFERENCES Award(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     tvshowID            INTEGER REFERENCES TVShow(id) ON UPDATE CASCADE ON DELETE RESTRICT,
     personID            INTEGER REFERENCES Person(id) ON UPDATE CASCADE ON DELETE RESTRICT,
-    PRIMARY KEY(awardID,tvshowID,personID)
+    PRIMARY KEY(year,awardID,tvshowID,personID)
 
 );
 
