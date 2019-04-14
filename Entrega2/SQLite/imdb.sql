@@ -29,8 +29,6 @@ CREATE TABLE Content(
     ageRating           TEXT,
     score               INTEGER,
     duration            INTEGER CHECK(duration > 0),
-    budget              REAL CHECK(budget > 0) 
-
 );
 
 CREATE TABLE Movie(
@@ -38,7 +36,7 @@ CREATE TABLE Movie(
     id                  INTEGER PRIMARY KEY REFERENCES Content(id) ON UPDATE CASCADE ON DELETE RESTRICT, 
     year                INTEGER CHECK(year > 1850) NOT NULL,
     boxoffice           REAL CHECK(boxoffice >= 0)          
-
+    budget              REAL CHECK(budget > 0) 
 );
 
 
