@@ -1,6 +1,7 @@
 # BDAD
 
 ### TO DO (3ª entrega)
+- [X] Corrigir relatório
 - [ ] 10 queries
     - [ ] descrição
     - [ ] sql
