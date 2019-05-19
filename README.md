@@ -10,8 +10,8 @@
     - [ ] sql
 
 
-## Ideias de queries (10 to go)
-
+## Ideias de queries (9 to go)
+1. Pessoa com mais prémios ganhos por TV shows
 
 ## Ideias de triggers (3 to go)
 1. Atualizar os scores quando se introduzem reviews
