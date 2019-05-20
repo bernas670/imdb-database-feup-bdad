@@ -17,6 +17,7 @@
 4. Filme com mais lucro por ano
 5. Pessoas que participaram na saga Star Wars (pattern matching)
 6. Atores que participaram em filmes realizados pelo Tarantino
+7. filmes com score > 8 q n ganharam premios
 
 
 
