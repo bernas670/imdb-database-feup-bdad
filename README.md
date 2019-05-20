@@ -11,12 +11,12 @@
 
 
 ## Ideias de queries (8 to go)
-1. Pessoa com mais prémios ganhos por TV shows
+1. Pessoa com mais prémios ganhos por TV shows (implementado)
 2. Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
 
 
 ## Ideias de triggers (2 to go)
-1. Atualizar os scores quando se introduzem reviews
+1. Atualizar os scores quando se introduzem reviews (implementado, falta ficheiro verifica)
 
 
 
