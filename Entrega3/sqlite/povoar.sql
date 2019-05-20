@@ -3,6 +3,9 @@ PRAGMA foreign_keys = ON;
 INSERT INTO User VALUES(1,'up201706736@fe.up.pt','lpc');
 INSERT INTO User VALUES(2,'up201705373@fe.up.pt','dhero');
 INSERT INTO User VALUES(3,'up201706534@fe.up.pt','b670');
+INSERT INTO User VALUES(4,'user4@hello.com','dlr4');
+INSERT INTO User VALUES(5,'user5@hello.com','cdalhj');
+INSERT INTO User VALUES(6,'user6@hello.com','yey');
 
 INSERT INTO Country (id,name) VALUES(1,"United States of America");
 INSERT INTO Country (id,name) VALUES(2,"Portugal");
