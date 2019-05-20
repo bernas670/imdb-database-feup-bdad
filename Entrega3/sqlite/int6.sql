@@ -2,10 +2,14 @@
 .headers on
 .nullvalue NULL
 
-SELECT id, firstName, lastName
-FROM Person, RolePersonContent ON personID = person.id
-WHERE roleID = 1 AND contentID IN (
-                                    SELECT contentID
-                                    FROM RolePersonContent, Person ON personID = person.id
-                                    WHERE personID = 14 AND roleID = 2
-                                  ); 
+SELECT Person.id, firstName, lastName
+FROM Person, RolePersonContent, Role ON personID = Person.id AND roleID = Role.id
+WHERE Role.description = 'Actor' AND contentID IN 
+(
+    SELECT contentID
+    FROM RolePersonContent, Person, Role 
+    ON personID = Person.id AND roleID = Role.id
+    WHERE Person.firstName = 'Stanley' AND 
+        Person.lastName = 'Kubrick' AND 
+        role.description = 'Director'
+); 
