@@ -10,9 +10,14 @@
     - [ ] sql
 
 
-## Ideias de queries (8 to go)
+## Ideias de queries (6 to go)
 1. Pessoa com mais prémios ganhos por TV shows (implementado)
 2. Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
+3. País com mais primeiras estreias
+4. Filme com mais lucro por ano
+5. Pessoas que participaram na saga Star Wars (pattern matching)
+6. Atores que participaram em filmes realizados pelo Tarantino
+
 
 
 ## Ideias de triggers (2 to go)
