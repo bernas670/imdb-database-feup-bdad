@@ -10,7 +10,7 @@
     - [ ] sql
 
 
-## Ideias de queries (6 to go)
+## Ideias de queries 
 - [X] 1. Pessoa com mais prémios ganhos por TV shows 
 - [ ] 2. Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
 - [ ] 3. País com mais primeiras estreias
@@ -23,8 +23,8 @@
 - [ ] 10.
 
 
-## Ideias de triggers (2 to go)
-- [X] 1. Atualizar os scores quando se introduzem reviews (implementado, falta ficheiro verifica)
+## Ideias de triggers 
+- [X] 1. Atualizar os scores quando se introduzem reviews
 - [ ] 2.
 - [ ] 3
 
