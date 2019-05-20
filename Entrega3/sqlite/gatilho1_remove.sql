@@ -1,0 +1,2 @@
+DROP TRIGGER IF EXISTS UpdateContentScore;
+DROP TRIGGER IF EXISTS UpdateTvShowScore;
