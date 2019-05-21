@@ -22,16 +22,17 @@
 - [ ] 9.
 - [ ] 10.
 
-pesooas que tem na sua watchlist todos os filmes de um determinado ator
-todos os pares de pessoas que tem o mesmo filme na sua watchlist
-filmes que ganharam simultaneamente
-filmes/atore/series que ganharam mais que dois premios no mesmo ano
-pessoas que tenha na watchlist a serie completa
+- pesooas que tem na sua watchlist todos os filmes de um determinado ator
+- todos os pares de pessoas que tem o mesmo filme na sua watchlist
+- filmes que ganharam simultaneamente
+- filmes/atore/series que ganharam mais que dois premios no mesmo ano
+- pessoas que tenha na watchlist a serie completa
 
 ## Ideias de triggers 
 - [X] 1. Atualizar os scores quando se introduzem reviews
 - [X] 2. impedir que sejam adicionadas pessoas que já morreram a filmes/series
 - [ ] 3. impedir que sejam adicionados episodios a uma serie que já terminou
+- outra ideia: impedir que pessoas ganhem prémios por filmes onde não participaram
 
 
 ##### TO DO (outras entregas)
