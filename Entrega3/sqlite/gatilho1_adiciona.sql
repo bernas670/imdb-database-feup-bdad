@@ -1,5 +1,3 @@
-PRAGMA foreign_keys = ON;
-
 CREATE TRIGGER UpdateContentScore
 AFTER INSERT ON ContentReview
 FOR EACH ROW

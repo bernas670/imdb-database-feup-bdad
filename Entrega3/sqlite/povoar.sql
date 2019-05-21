@@ -99,6 +99,7 @@ INSERT INTO Content VALUES(21,'A Rickle in Time','Having restarted time, Rick, M
 INSERT INTO Content VALUES(22,'The Rickshank Rickdemption','Rick, still in galactic prison, puts an intricate escape plan into action.','M/16',NULL,23);
 INSERT INTO Content VALUES(23,'Rickmancing the Stone','With the kids dealing with their parents'' divorce, Rick takes them to a Mad Max-style universe where he tries to steal a green crystal from a group of scavengers.','M/16',NULL,22);
 
+
 INSERT INTO Movie VALUES(1,1976,28299999.999999999999,1900000.0);
 INSERT INTO Movie VALUES(2,1994,213900000.0,8500000.0);
 INSERT INTO Movie VALUES(3,1971,26600000.0,2200000.0);
