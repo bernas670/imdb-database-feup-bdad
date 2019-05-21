@@ -32,6 +32,7 @@ pessoas que tenha na watchlist a serie completa
 - [X] 1. Atualizar os scores quando se introduzem reviews
 - [X] 2. impedir que sejam adicionadas pessoas que já morreram a filmes/series
 - [ ] 3. impedir que sejam adicionados episodios a uma serie que já terminou
+- outra ideia: impedir que pessoas ganhem prémios por filmes onde não participaram
 
 
 ##### TO DO (outras entregas)
