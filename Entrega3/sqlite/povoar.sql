@@ -98,6 +98,7 @@ INSERT INTO Content VALUES(20,'Pilot','A sociopathic scientist drags his innocen
 INSERT INTO Content VALUES(21,'A Rickle in Time','Having restarted time, Rick, Morty and Summer are in a quantum-uncertain state of existence.','M/16',NULL,23);
 INSERT INTO Content VALUES(22,'The Rickshank Rickdemption','Rick, still in galactic prison, puts an intricate escape plan into action.','M/16',NULL,23);
 INSERT INTO Content VALUES(23,'Rickmancing the Stone','With the kids dealing with their parents'' divorce, Rick takes them to a Mad Max-style universe where he tries to steal a green crystal from a group of scavengers.','M/16',NULL,22);
+INSERT INTO Content VALUES(24,'Trumbo','In 1947, Dalton Trumbo was Hollywood''s top screenwriter, until he and other artists were jailed and blacklisted for their political beliefs.','M/16',NULL,124);
 
 
 INSERT INTO Movie VALUES(1,1976,28299999.999999999999,1900000.0);
@@ -106,6 +107,7 @@ INSERT INTO Movie VALUES(3,1971,26600000.0,2200000.0);
 INSERT INTO Movie VALUES(4,1998,46199999.999999999998,15000000.0);
 INSERT INTO Movie VALUES(5,1996,NULL,NULL);
 INSERT INTO Movie VALUES(6,1980,44400000.0,19000000.0);
+INSERT INTO Movie VALUES(24, 2015,15000000.0,12100000.0);
 
 INSERT INTO TVShow VALUES(1,'Breaking Bad','A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family''s future.','M/16',NULL,'false');
 INSERT INTO TVShow VALUES(2,'After Life','After Tony''s wife dies unexpectedly, his nice-guy persona is altered into an impulsive, devil-may-care attitude taking his old world by storm.',NULL,NULL,'true');
@@ -369,6 +371,7 @@ INSERT INTO AwardName VALUES(3,'Screen Actors Guild');
 INSERT INTO AwardName VALUES(4,'Oscar');
 INSERT INTO AwardName VALUES(5,'British Academy Film Awards');
 INSERT INTO AwardName VALUES(6,'Cannes Film Festival');
+INSERT INTO AwardName VALUES(7, 'Broadcast Film Critics Association Awards');
 
 INSERT INTO Award VALUES(1,'Best Television Series - Drama',1);
 INSERT INTO Award VALUES(2,'Best Actor in a Television Series - Drama ',1);
@@ -385,6 +388,7 @@ INSERT INTO Award VALUES(12,'Best Screenplay - Original',5);
 INSERT INTO Award VALUES(13,'Best Screenplay - Adapted',5);
 INSERT INTO Award VALUES(14,'Palme d''Or',6);
 INSERT INTO Award VALUES(15, 'Outstanding Animated Program',2);
+INSERT INTO Award VALUES(16, 'Best Actor',7);
 
 INSERT INTO TVAward VALUES(2014,1,1,NULL);
 INSERT INTO TVAward VALUES(2014,2,1,11);
@@ -402,3 +406,4 @@ INSERT INTO MovieAward VALUES(1995,11,2,6);
 INSERT INTO MovieAward VALUES(1995,12,2,9);
 INSERT INTO MovieAward VALUES(1996,13,5,31);
 INSERT INTO MovieAward VALUES(1976,14,1,1);
+INSERT INTO MovieAward VALUES(2016,16,24,11);

@@ -2,10 +2,16 @@
 .headers on
 .nullvalue NULL
 
-SELECT max(numAwards) as numAwards, id, firstName, lastName
+SELECT id, firstName, lastName, count(*) as numAwards 
 FROM Person, ( 
-                SELECT personID, count(*) as numAwards
-                FROM TVAward
-                GROUP BY personID
+               SELECT year, personID, awardID
+               FROM TVAward 
+               UNION ALL 
+               SELECT year, personID, awardID
+               FROM MovieAward
              )
-WHERE Person.id = personID;
+ON personID = Person.id
+GROUP BY personID;
+
+             
+
