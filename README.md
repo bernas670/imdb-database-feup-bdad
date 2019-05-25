@@ -11,22 +11,28 @@
 
 
 ## Ideias de queries 
-- [X] 1. Pessoa com mais prémios ganhos por TV shows 
-- [ ] 2. Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
-- [ ] 3. País com mais primeiras estreias
-- [ ] 4. Filme com mais lucro por ano
-- [ ] 5. Pessoas que participaram na saga Star Wars (pattern matching)
-- [X] 6. Atores que participaram em filmes realizados por uma dada pessoa 
-- [ ] 7. filmes com score > 8 q n ganharam premios
+- [X] 1.  Lista de pessoas e numero de premios ganhos 
+- [X] 2.  Atores que participaram em filmes realizados por uma dada pessoa 
+- [ ] 3.  Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
+- [ ] 4.  País com mais primeiras estreias
+- [ ] 5.  Filme com mais lucro por ano
+- [ ] 6.  Pessoas que participaram na saga Star Wars (pattern matching)
+- [ ] 7.  filmes com score > 8 q n ganharam premios
 - [ ] 8.
 - [ ] 9.
 - [ ] 10.
 
+- pesooas que tem na sua watchlist todos os filmes de um determinado ator
+- todos os pares de pessoas que tem o mesmo filme na sua watchlist
+- filmes que ganharam simultaneamente
+- filmes/atore/series que ganharam mais que dois premios no mesmo ano
+- pessoas que tenha na watchlist a serie completa
 
 ## Ideias de triggers 
 - [X] 1. Atualizar os scores quando se introduzem reviews
-- [ ] 2.
-- [ ] 3
+- [X] 2. impedir que sejam adicionadas pessoas que já morreram a filmes/series
+- [ ] 3. impedir que sejam adicionados episodios a uma serie que já terminou
+- outra ideia: impedir que pessoas ganhem prémios por filmes onde não participaram
 
 
 ##### TO DO (outras entregas)

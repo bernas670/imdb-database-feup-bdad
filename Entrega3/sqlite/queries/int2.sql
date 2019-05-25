@@ -10,6 +10,6 @@ WHERE Role.description = 'Actor' AND contentID IN
     FROM RolePersonContent, Person, Role 
     ON personID = Person.id AND roleID = Role.id
     WHERE Person.firstName = 'Stanley' AND 
-        Person.lastName = 'Kubrick' AND 
-        role.description = 'Director'
+          Person.lastName = 'Kubrick' AND 
+          role.description = 'Director'
 ); 

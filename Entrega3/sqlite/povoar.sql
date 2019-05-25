@@ -108,6 +108,8 @@ INSERT INTO Content VALUES(27,'Star Wars: Episode IV - A New Hope','Luke Skywalk
 INSERT INTO Content VALUES(28,'Star Wars: Episode V - Empire Strikes Back','After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.','PG',NULL,124);
 INSERT INTO Content VALUES(29,'Star Wars: Episode VI - Return of The Jedi','After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor''s trap.','PG',NULL,131);
 INSERT INTO Content VALUES(30,'Star Wars: Episode VII - The Force Awakens','Three decades after the Empire''s defeat, a new threat arises in the militant First Order. Defected stormtrooper Finn and the scavenger Rey are caught up in the Resistance''s search for the missing Luke Skywalker.','PG',NULL,136);
+INSERT INTO Content VALUES(31,'Trumbo','In 1947, Dalton Trumbo was Hollywood''s top screenwriter, until he and other artists were jailed and blacklisted for their political beliefs.','M/16',NULL,124);
+
 
 INSERT INTO Movie VALUES(1,1976,28299999.999999999999,1900000.0);
 INSERT INTO Movie VALUES(2,1994,213900000.0,8500000.0);
@@ -122,6 +124,7 @@ INSERT INTO Movie VALUES(27,1977,775398007.0,11000000.0);
 INSERT INTO Movie VALUES(28,1980,247916602.0,17999999.999999999999);
 INSERT INTO Movie VALUES(29,1983,572705079.00000000001,32500000.0);
 INSERT INTO Movie VALUES(30,2015,2068223624.0,245000000.0);
+INSERT INTO Movie VALUES(31, 2015,15000000.0,12100000.0);
 
 INSERT INTO TVShow VALUES(1,'Breaking Bad','A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family''s future.','M/16',NULL,'false');
 INSERT INTO TVShow VALUES(2,'After Life','After Tony''s wife dies unexpectedly, his nice-guy persona is altered into an impulsive, devil-may-care attitude taking his old world by storm.',NULL,NULL,'true');
@@ -420,6 +423,7 @@ INSERT INTO AwardName VALUES(3,'Screen Actors Guild');
 INSERT INTO AwardName VALUES(4,'Oscar');
 INSERT INTO AwardName VALUES(5,'British Academy Film Awards');
 INSERT INTO AwardName VALUES(6,'Cannes Film Festival');
+INSERT INTO AwardName VALUES(7, 'Broadcast Film Critics Association Awards');
 
 INSERT INTO Award VALUES(1,'Best Television Series - Drama',1);
 INSERT INTO Award VALUES(2,'Best Actor in a Television Series - Drama ',1);
@@ -436,6 +440,7 @@ INSERT INTO Award VALUES(12,'Best Screenplay - Original',5);
 INSERT INTO Award VALUES(13,'Best Screenplay - Adapted',5);
 INSERT INTO Award VALUES(14,'Palme d''Or',6);
 INSERT INTO Award VALUES(15, 'Outstanding Animated Program',2);
+INSERT INTO Award VALUES(16, 'Best Actor',7);
 
 INSERT INTO TVAward VALUES(2014,1,1,NULL);
 INSERT INTO TVAward VALUES(2014,2,1,11);
@@ -453,3 +458,4 @@ INSERT INTO MovieAward VALUES(1995,11,2,6);
 INSERT INTO MovieAward VALUES(1995,12,2,9);
 INSERT INTO MovieAward VALUES(1996,13,5,31);
 INSERT INTO MovieAward VALUES(1976,14,1,1);
+INSERT INTO MovieAward VALUES(2016,16,24,11);
