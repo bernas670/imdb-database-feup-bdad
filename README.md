@@ -13,20 +13,20 @@
 ## Ideias de queries 
 - [X] 1.  Lista de pessoas e numero de premios ganhos 
 - [X] 2.  Atores que participaram em filmes realizados por uma dada pessoa 
-- [ ] 3.  Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
-- [ ] 4.  País com mais primeiras estreias
-- [ ] 5.  Filme com mais lucro por ano
-- [ ] 6.  Pessoas que participaram na saga Star Wars (pattern matching)
-- [ ] 7.  filmes com score > 8 q n ganharam premios
-- [ ] 8.
-- [ ] 9.
-- [ ] 10.
+- [x] 3.  Lista de filmes associados com o seu ator mais famoso (que participou em mais filmes)
+- [x] 4.  País com mais primeiras estreias
+- [x] 5.  Pessoas que tenha na watchlist a serie completa
+- [x] 6.  filmes/atore/series que ganharam mais que dois premios no mesmo ano
+- [x] 7.  pesooas que tem na sua watchlist todos os filmes de um determinado ator
+- [ ] 8.  Filme com mais lucro por ano  
+- [ ] 9.  Pessoas que participaram na saga Star Wars (pattern matching)
+- [ ] 10. filmes com score > 8 q n ganharam premios
 
 - pesooas que tem na sua watchlist todos os filmes de um determinado ator
 - todos os pares de pessoas que tem o mesmo filme na sua watchlist
 - filmes que ganharam simultaneamente
-- filmes/atore/series que ganharam mais que dois premios no mesmo ano
-- pessoas que tenha na watchlist a serie completa
+- 
+- 
 
 ## Ideias de triggers 
 - [X] 1. Atualizar os scores quando se introduzem reviews
