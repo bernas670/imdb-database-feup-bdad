@@ -1,4 +1,8 @@
-CREATE TRIGGER UpsHesDead
+.mode columns
+.headers on
+.nullvalue NULL
+
+CREATE TRIGGER ImpossibleAppearance
 BEFORE INSERT ON RolePersonContent
 FOR EACH ROW
 
@@ -14,5 +18,5 @@ WHEN (
         WHERE Content.id = New.contentID
      )
 BEGIN
-    SELECT raise(rollback, 'LOL, USARAM O CADAVER COMO FIGURANTE? SO PODE');
+    SELECT raise(rollback, 'That person could not have appeared in that movie.');
 END;
