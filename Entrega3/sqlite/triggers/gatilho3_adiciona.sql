@@ -1,11 +1,9 @@
-CREATE TRIGGER DidNotParticipate
-BEFORE INSERT ON MovieAward
+CREATE TRIGGER RemoveFromWatchlist
+AFTER INSERT ON ContentReview
 FOR EACH ROW
-WHEN New.personID NOT IN (
-                            SELECT personID
-                            FROM RolePersonContent
-                            WHERE contentID = New.movieID
-                         )
+WHEN New.contentID IN (SELECT contentID
+                       FROM Watchlist
+                       WHERE userID = New.userID)
 BEGIN
-    SELECT raise(rollback, 'That person did not participate in that movie.');
+    DELETE FROM Watchlist WHERE userID = New.userID AND contentID = New.contentID;
 END;

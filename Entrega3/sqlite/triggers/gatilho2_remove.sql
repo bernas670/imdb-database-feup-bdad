@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS UpsHesDead;
+DROP TRIGGER IF EXISTS ImpossibleAppearance;

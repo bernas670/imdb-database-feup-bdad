@@ -1,1 +1,1 @@
-DROP TRIGGER IF EXISTS DidNotParticipate;
+DROP TRIGGER IF EXISTS RemoveFromWatchlist;
