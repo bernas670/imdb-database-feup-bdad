@@ -94,9 +94,9 @@ INSERT INTO Content VALUES(13,'Caballo sin Nombre','Walter, Jr. is having a roug
 INSERT INTO Content VALUES(14,'Box Cutter','Walt and Jesse are held captive for Gus, after Gale''s death. Meanwhile, Skyler tries to find out what happened to Walt.','M/16',NULL,52);
 INSERT INTO Content VALUES(15,'Live Free or Die','Now that Gus is dead, Walt, Jesse, and Mike work to cover their tracks. Skyler panics when Ted Beneke wakes up.','M/16',NULL,50);
 INSERT INTO Content VALUES(16,'Madrigal','Walt and Jesse seek out an unlikely partner for a new business venture. The DEA follows up new leads in its investigation.','M/16',NULL,48);
-INSERT INTO Content VALUES(17,'Episode #1.1','Tony''s cantankerous funk - which he calls a superpower - is taking a toll on his co-workers. Meanwhile, a new writer starts at The Tambury Gazette. ',NULL,NULL,30);
-INSERT INTO Content VALUES(18,'Episode #1.2','Thinking he has nothing to lose, Tony contemplates trying heroin. He babysits his nephew and starts to bond - just a bit - with Sandy.',NULL,NULL,31);
-INSERT INTO Content VALUES(19,'Episode #1.3','Tony hires a sex worker - but it''s not what you think. A trip to the comedy club turns awkward. The nurse gives Tony a piece of her mind. ',NULL,NULL,29);
+INSERT INTO Content VALUES(17,'Episode 1','Tony''s cantankerous funk - which he calls a superpower - is taking a toll on his co-workers. Meanwhile, a new writer starts at The Tambury Gazette. ',NULL,NULL,30);
+INSERT INTO Content VALUES(18,'Episode 2','Thinking he has nothing to lose, Tony contemplates trying heroin. He babysits his nephew and starts to bond - just a bit - with Sandy.',NULL,NULL,31);
+INSERT INTO Content VALUES(19,'Episode 3','Tony hires a sex worker - but it''s not what you think. A trip to the comedy club turns awkward. The nurse gives Tony a piece of her mind. ',NULL,NULL,29);
 INSERT INTO Content VALUES(20,'Pilot','A sociopathic scientist drags his innocent grandson on dangerous inter-dimensional adventures.','M/16',NULL,22);
 INSERT INTO Content VALUES(21,'A Rickle in Time','Having restarted time, Rick, Morty and Summer are in a quantum-uncertain state of existence.','M/16',NULL,23);
 INSERT INTO Content VALUES(22,'The Rickshank Rickdemption','Rick, still in galactic prison, puts an intricate escape plan into action.','M/16',NULL,23);
@@ -369,12 +369,13 @@ INSERT INTO RolePersonContent VALUES(3,28,21);
 INSERT INTO RolePersonContent VALUES(4,29,21);
 INSERT INTO RolePersonContent VALUES(2,30,22);
 INSERT INTO RolePersonContent VALUES(3,29,22);
-INSERT INTO RolePersonContent VALUES(3,8,22);
+INSERT INTO RolePersonContent VALUES(3,30,22);
 INSERT INTO RolePersonContent VALUES(4,29,22);
 INSERT INTO RolePersonContent VALUES(2,29,23);
 INSERT INTO RolePersonContent VALUES(3,29,23);
 INSERT INTO RolePersonContent VALUES(3,28,23);
 INSERT INTO RolePersonContent VALUES(4,29,23);
+INSERT INTO RolePersonContent VALUES(4,2,23);
 
 INSERT INTO ContentReview VALUES(1,3,10, 'A classic everyone should watch.');
 INSERT INTO ContentReview VALUES(1,2,2, 'This movie is very boring. The acting seems forced and the movie follows a very cliche path.');
