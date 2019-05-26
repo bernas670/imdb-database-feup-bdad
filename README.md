@@ -37,14 +37,14 @@
 
 
 ## Operadores utilizados
-- [ ] 1. SFW
+- [x] 1. SFW
 - [ ] 2. DISTINCT
 - [ ] 3. ORDER BY
 - [ ] 4. Like (pattern matching)
 - [ ] 5. Arithmetic
-- [ ] 6. AS (renaming)
+- [x] 6. AS (renaming)
 - [ ] 7. Set operators
-    - [ ] Union/Union All
+    - [x] Union/Union All
     - [ ] Intersect
     - [ ] Except
 - [ ] 8. Subquery in WHERE
@@ -52,19 +52,19 @@
 - [ ] 10. All
 - [ ] 11. Any
 - [ ] 12. In/not in
-- [ ] 13. Subquery in FROM
+- [x] 13. Subquery in FROM
 - [ ] 14. Subquery in SELECT
 - [ ] 15. JOINS
-    - [ ] INNER JOIN
+    - [x] INNER JOIN
     - [ ] NATURAL JOIN
     - [ ] LEFT/RIGHT/FULL OUTER JOIN
 - [ ] 16. Aggregation
-    - [ ] min 
-    - [ ] max
+    - [x] min 
+    - [x] max
     - [ ] sum 
-    - [ ] avg 
-    - [ ] count
-- [ ] 17. GROUP BY / HAVING
+    - [x] avg 
+    - [x] count
+- [x] 17. GROUP BY / HAVING
 
 
 ##### TO DO (outras entregas)
