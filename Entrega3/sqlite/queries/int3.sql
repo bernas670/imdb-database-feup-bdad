@@ -9,6 +9,6 @@ FROM Content, (SELECT Movie.id AS MovieID,Person.id AS PersonID, Person.firstNam
                                     FROM RolePersonContent JOIN Role ON (RolePersonContent.roleID = Role.id) 
                                     WHERE Role.description = 'Actor') AS ActorContent
                 WHERE Person.id = ActorContent.personID and Movie.id = ActorContent.contentID 
-                GROUP BY Person.id)    AS ActorParticipationCount   
+                GROUP BY Movie.id)    AS ActorParticipationCount   
 WHERE Content.id = ActorParticipationCount.MovieID
 GROUP BY ActorParticipationCount.MovieID; 
