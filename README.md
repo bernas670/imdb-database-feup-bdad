@@ -20,11 +20,9 @@
 - [x] 6.  filmes/atore/series que ganharam mais que dois premios no mesmo ano
 - [x] 7.  todos os pares de pessoas que têm conteudos com participações da mesma pessoa na sua watchlist
 - [x] 8.  Pessoas que participaram na saga Star Wars e ganharam premio por um filme que tenha uma categoria que não seja categoria de filmes da saga star wars
-- [ ] 9.  Filme com mais lucro por ano 
+- [x] 9.  Guest Stars - atores (voz ou dos outros) que participaram em apenas um episódio de uma série (caso a série tenha mais do que um episódio)
 - [ ] 10. pesooas que tem na sua watchlist todos os filmes de um determinado ator
 
-
-- pesooas que tem na sua watchlist todos os filmes de um determinado ator
 - filmes que ganharam simultaneamente
 
 #### Ideias de queries abortadas
