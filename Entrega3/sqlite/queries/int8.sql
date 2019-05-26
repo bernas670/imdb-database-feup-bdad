@@ -20,6 +20,6 @@ FROM Person
                                                  NATURAL JOIN StarWarsMovies)
                    )) as NotStarWarsGenreAwards
 WHERE Person.id in (SELECT personID
-                    FROM StarWarsMovies NATURAL JOIN RolePersonContent)                    
+                    FROM StarWarsMovies NATURAL JOIN RolePersonContent)        ;            
 
 

@@ -1,3 +1,7 @@
+.mode columns
+.headers on
+.nullvalue NULL
+
 SELECT *
 FROM (
       
@@ -27,4 +31,4 @@ FROM (
     WHERE personID IS NULL
     GROUP BY TVAward.year, tvshowID
 )
-WHERE count >= 2
+WHERE count >= 2;
