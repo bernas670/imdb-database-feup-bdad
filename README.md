@@ -23,11 +23,14 @@
 - [ ] 9.  Pessoas que participaram na saga Star Wars (pattern matching)
 - [ ] 10. pesooas que tem na sua watchlist todos os filmes de um determinado ator
 
+
 - pesooas que tem na sua watchlist todos os filmes de um determinado ator
-- todos os pares de pessoas que tem o mesmo filme na sua watchlist
 - filmes que ganharam simultaneamente
-- filmes com score > 8 q n ganharam premios
-- 
+
+#### Ideias de queries abortadas
+- todos os pares de pessoas que tem o mesmo filme na sua watchlist
+- filmes com score > 8 q n ganharam premios ES  
+
 
 ## Ideias de triggers 
 - [X] 1. Atualizar os scores quando se introduzem reviews
