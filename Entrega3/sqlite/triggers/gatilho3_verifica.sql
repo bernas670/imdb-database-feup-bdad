@@ -4,7 +4,7 @@
 
 PRAGMA foreign_keys = ON;
 
-print('Inserting content 20 in user 1 watchlist');
+SELECT 'Inserting content 20 in user 1 watchlist';
 INSERT INTO Watchlist VALUES (20, 1);
 SELECT * FROM Watchlist;
 SELECT 'Inserting review of user 1 to content 20';
