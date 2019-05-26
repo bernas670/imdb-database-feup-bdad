@@ -17,15 +17,15 @@
 - [x] 4.  País com mais primeiras estreias
 - [x] 5.  Pessoas que tenha na watchlist a serie completa
 - [x] 6.  filmes/atore/series que ganharam mais que dois premios no mesmo ano
-- [x] 7.  pesooas que tem na sua watchlist todos os filmes de um determinado ator
+- [x] 7.  todos os pares de pessoas que têm conteudos com participações da mesma pessoa na sua watchlist
 - [ ] 8.  Filme com mais lucro por ano  
 - [ ] 9.  Pessoas que participaram na saga Star Wars (pattern matching)
-- [ ] 10. filmes com score > 8 q n ganharam premios
+- [ ] 10. pesooas que tem na sua watchlist todos os filmes de um determinado ator
 
 - pesooas que tem na sua watchlist todos os filmes de um determinado ator
 - todos os pares de pessoas que tem o mesmo filme na sua watchlist
 - filmes que ganharam simultaneamente
-- 
+- filmes com score > 8 q n ganharam premios
 - 
 
 ## Ideias de triggers 
