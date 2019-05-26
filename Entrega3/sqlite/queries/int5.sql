@@ -1,4 +1,8 @@
-SELECT TVShow.name as ShowName,User.name as Username
+.mode columns
+.headers on
+.nullvalue NULL
+
+SELECT User.name as Username, User.email as Email
 FROM (SELECT userID,tvshowID,contentID, count(*) as numberOfEpisodesOfShowInWatchlist
       FROM Watchlist JOIN Episode ON (Watchlist.contentID = Episode.id)
       GROUP BY userID,tvshowID) as UserAndPerShowEpisodeCntInWatchlist,
@@ -10,5 +14,5 @@ FROM (SELECT userID,tvshowID,contentID, count(*) as numberOfEpisodesOfShowInWatc
 WHERE EpisodeCountPerTVShow.episodeCnt = UserAndPerShowEpisodeCntInWatchlist.numberOfEpisodesOfShowInWatchlist 
         and UserAndPerShowEpisodeCntInWatchlist.tvshowID = EpisodeCountPerTVShow.tvshowID
         and User.id = UserAndPerShowEpisodeCntInWatchlist.userID
-        and TVShow.name = 'Rick and Morty'
+        and TVShow.name = 'Rick and Morty';
         

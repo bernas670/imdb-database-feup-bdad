@@ -11,4 +11,4 @@ FROM Content, (SELECT Movie.id AS MovieID,Person.id AS PersonID, Person.firstNam
                 WHERE Person.id = ActorContent.personID and Movie.id = ActorContent.contentID 
                 GROUP BY Person.id)    AS ActorParticipationCount   
 WHERE Content.id = ActorParticipationCount.MovieID
-GROUP BY ActorParticipationCount.MovieID 
+GROUP BY ActorParticipationCount.MovieID; 

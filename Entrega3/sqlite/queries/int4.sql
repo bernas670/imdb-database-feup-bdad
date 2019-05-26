@@ -9,4 +9,4 @@ FROM (SELECT countryID,count(*) as cnt
             GROUP BY Released.contentID) as EarliestReleasePerContent
       GROUP BY countryID) as FirstPremierePerCountry
     , Country
-WHERE Country.id = FirstPremierePerCountry.countryID
+WHERE Country.id = FirstPremierePerCountry.countryID;

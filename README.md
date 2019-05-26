@@ -19,12 +19,10 @@
 - [x] 5.  Pessoas que tenha na watchlist a serie completa
 - [x] 6.  filmes/atore/series que ganharam mais que dois premios no mesmo ano
 - [x] 7.  todos os pares de pessoas que têm conteudos com participações da mesma pessoa na sua watchlist
-- [ ] 8.  Filme com mais lucro por ano  
-- [ ] 9.  Pessoas que participaram na saga Star Wars (pattern matching)
+- [x] 8.  Pessoas que participaram na saga Star Wars e ganharam premio por um filme que tenha uma categoria que não seja categoria de filmes da saga star wars
+- [x] 9.  Guest Stars - atores (voz ou dos outros) que participaram em apenas um episódio de uma série (caso a série tenha mais do que um episódio)
 - [ ] 10. pesooas que tem na sua watchlist todos os filmes de um determinado ator
 
-
-- pesooas que tem na sua watchlist todos os filmes de um determinado ator
 - filmes que ganharam simultaneamente
 
 #### Ideias de queries abortadas
@@ -41,25 +39,25 @@
 
 ## Operadores utilizados
 - [x] 1. SFW
-- [ ] 2. DISTINCT
+- [x] 2. DISTINCT
 - [ ] 3. ORDER BY
-- [ ] 4. Like (pattern matching)
+- [x] 4. Like (pattern matching)
 - [ ] 5. Arithmetic
 - [x] 6. AS (renaming)
 - [ ] 7. Set operators
     - [x] Union/Union All
     - [ ] Intersect
-    - [ ] Except
-- [ ] 8. Subquery in WHERE
+    - [x] Except
+- [x] 8. Subquery in WHERE
 - [ ] 9. Exists
 - [ ] 10. All
 - [ ] 11. Any
-- [ ] 12. In/not in
+- [x] 12. In/not in
 - [x] 13. Subquery in FROM
 - [ ] 14. Subquery in SELECT
 - [ ] 15. JOINS
     - [x] INNER JOIN
-    - [ ] NATURAL JOIN
+    - [x] NATURAL JOIN
     - [ ] LEFT/RIGHT/FULL OUTER JOIN
 - [ ] 16. Aggregation
     - [x] min 
@@ -90,6 +88,6 @@
 - ver situação do year dos movies DONE
 - restrição de onGoing (NULL) DONE
 - dependencias funcionais (ver os uniques) DONE
--LEMBRAR QUE FALTA UM ON DELETE E ON UPDATE NA CLASSE TVSHOW DONE
+- LEMBRAR QUE FALTA UM ON DELETE E ON UPDATE NA CLASSE TVSHOW DONE
 
 
