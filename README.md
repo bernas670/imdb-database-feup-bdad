@@ -8,6 +8,7 @@
 - [ ] 3 triggers
     - [ ] descrição
     - [ ] sql
+- [ ] Adicionar dados à base de dados de modo às queries retornarem resultados apropriados
 
 
 ## Ideias de queries 
